@@ -9,3 +9,4 @@
 # References:
 
 - http://www.lua.org/manual/5.1/manual.html#pdf-os.execute
+- https://learnxinyminutes.com/docs/lua/
