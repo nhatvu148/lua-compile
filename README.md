@@ -17,6 +17,11 @@
 
 - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 - Computer\HKEY_CURRENT_USER\Environment
+- Computer\HKEY_CLASSES_ROOT\*\shell ==> Change Open with in Context Menu
+
+  --> Computer\HKEY_CLASSES_ROOT\*\shell\VS\command
+
+  --> REG ADD "HKEY_CLASSES_ROOT\*\shell\VS\command" /ve /d "\"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe\" \"%%1\"" /f
 
 # List of environment variables in Windows 10
 
