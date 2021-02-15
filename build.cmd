@@ -49,4 +49,12 @@
 
         echo.
 
+        REG ADD "HKEY_CLASSES_ROOT\Applications\lua.exe\shell\open\command" /v @ /t REG_SZ /d "\"%work_dir%\lua\bin\lua.exe\" \"%%1\"" /f
+        REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.lua" /v "Application" /t REG_SZ /d "lua.exe" /f
+        REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.lua\OpenWithList" /v "g" /t REG_SZ /d "lua.exe" /f
+        REG ADD HKEY_CURRENT_USER\Environment /v Path /t REG_SZ /d %work_dir%\lua\bin; /f
+
+        assoc .lua=luafile
+        ftype luafile="%work_dir%\lua\bin\lua.exe" "%%1"
+
         pause

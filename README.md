@@ -10,3 +10,8 @@
 
 - http://www.lua.org/manual/5.1/manual.html#pdf-os.execute
 - https://learnxinyminutes.com/docs/lua/
+
+# Environment Variable Keys:
+
+- Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+- Computer\HKEY_CURRENT_USER\Environment
